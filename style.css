@@ -1,0 +1,45 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Import dari Google Fonts: tambah <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> di head HTML */
+    background: linear-gradient(to bottom, #fce4ec, #fff8e1);
+    color: #ad1457;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1, h2 {
+    color: #ad1457;
+    animation: fadeIn 2s;
+}
+button {
+    background: #e91e63;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 16px;
+}
+button:hover {
+    background: #c2185b;
+}
+.hidden {
+    opacity: 0;
+    transition: opacity 1s;
+}
+.reveal {
+    opacity: 1;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* Responsif untuk mobile */
+@media (max-width: 600px) {
+    .container { padding: 10px; }
+}
